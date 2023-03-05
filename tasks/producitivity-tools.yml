@@ -1,0 +1,16 @@
+- name: Install packages
+  become: true
+  apt:
+    name: [ "tmux", "fzf", "gimp", "tldr", "shutter" , "htop"]
+  tags:
+    - install
+    - productivity
+
+- name: Cargo Installs
+  become: true
+  cargo install:
+    name: [ "bat", "ripgrep"]
+  tags:
+    - install
+    - productivity
+

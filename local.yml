@@ -13,6 +13,6 @@
       - install
       - core
   tasks:
-    - include: task/zsh.yml
+    - include: tasks/zsh.yml
     - include: tasks/productivity-tools.yml
     - include: tasks/nvim-setup.yml

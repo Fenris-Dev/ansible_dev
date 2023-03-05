@@ -13,5 +13,5 @@
       - install
       - core
   tasks:
-    - include: tasks/producivity-tools.yml
+    - include: tasks/productivity-tools.yml
     - include: tasks/nvim-setup.yml

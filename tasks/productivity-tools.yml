@@ -5,7 +5,6 @@
   tags:
     - install
     - productivity
-
 - name: Cargo Installs
   become: true
   cargo install:

@@ -13,8 +13,4 @@
       - install
       - core
   tasks:
-  - name: install packages
-    package:
-      name:
-        - htop
-        - tmux
+    - include: tasks/nvim-setup.yml

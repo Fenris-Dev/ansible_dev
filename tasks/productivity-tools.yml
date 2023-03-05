@@ -5,11 +5,3 @@
   tags:
     - install
     - productivity
-- name: Cargo Installs
-  become: true
-  cargo install:
-    name: [ "bat", "ripgrep"]
-  tags:
-    - install
-    - productivity
-

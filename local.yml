@@ -2,8 +2,7 @@
 - hosts: localhost
   connection: local
   become: true
-
-  pre_task:
+  pre_tasks:
   - name: update apt
     become: true
     apt:
@@ -13,7 +12,6 @@
     tags:
       - install
       - core
-
   tasks:
   - name: install packages
     package:

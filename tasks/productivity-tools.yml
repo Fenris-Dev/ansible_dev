@@ -1,7 +1,7 @@
 - name: Install packages
   become: true
   apt:
-    name: [ "tmux", "fzf", "gimp", "tldr", "shutter" , "htop"]
+    name: [ "tmux", "fzf", "gimp", "xclip", "tldr", "shutter" , "htop"]
   tags:
     - install
     - productivity

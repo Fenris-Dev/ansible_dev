@@ -15,5 +15,6 @@
   tasks:
     - include: tasks/zsh.yml
     - include: tasks/productivity-tools.yml
+    - include: tasks/node.yml
     - include: tasks/dotfiles.yml
     - include: tasks/nvim-setup.yml

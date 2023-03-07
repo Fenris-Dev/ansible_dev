@@ -1,7 +1,7 @@
 - name: Installing cargo crates
   become: true
   shell: cargo install bat du-dust ripgrep exa fd-find tokei procs
-  enviroment:
+  environment:
     PATH: "/home/jquirky/.cargo/bin;/usr/local/bin:/user/bin:/bin"
     RUSTUP_HOME: "/home/jquirky/.rustup"
     CARGO_HOME: "/home/jquirky/.cargo"

@@ -1,5 +1,4 @@
 - name: Installing cargo crates
-  become: true
   shell: /home/jquirky/.cargo/bin/cargo +stable install bat #du-dust ripgrep exa fd-find tokei procs
   tags:
     - install

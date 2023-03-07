@@ -1,6 +1,10 @@
-- name: Run cargo crates script
+- name: Installing cargo crates
   become: true
-  script: ../scripts/cargo.sh
+  shell: cargo install bat du-dust ripgrep exa fd-find tokei procs
+  enviroment:
+    PATH: "/home/jquirky/.cargo/bin;/usr/local/bin:/user/bin:/bin"
+    RUSTUP_HOME: "/home/jquirky/.rustup"
+    CARGO_HOME: "/home/jquirky/.cargo"
   tags:
     - install
     - cargo

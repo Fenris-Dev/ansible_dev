@@ -1,6 +1,6 @@
 - name: Installing cargo crates
   become: true
-  shell: $(which cargo) install bat du-dust ripgrep exa fd-find tokei procs
+  shell: $(which cargo) install bat #du-dust ripgrep exa fd-find tokei procs
   tags:
     - install
     - cargo
